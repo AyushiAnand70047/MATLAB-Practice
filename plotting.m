@@ -20,6 +20,7 @@ hold on
 y3 = -(x-5).^2 + 10;
 plot(x,y3,'blue+')
 
+%label x, y aixs and add title to figure
 xlabel('x axis')
 ylabel('y axis')
 title('Y vs. X')
@@ -30,3 +31,17 @@ legend('y1','y2','y3')
 % to change axis range
 xlim([0,10])
 ylim([0,10])
+
+% plot graph in new figure (add line with some width)
+figure(2)
+plot(x,y1,'LineWidth',2)
+
+% subplot
+figure(3)
+% create 2 rows, 2 columns and select 1st position
+subplot(2,2,1)
+plot(x,y1)
+subplot(2,2,2)
+plot(x,y2)
+subplot(2,2,3)
+plot(x,y3)
