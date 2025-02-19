@@ -51,6 +51,9 @@ A = ones(3,2);
 B = zeros(5);
 % identity matrix(3x3)
 C = eye(3);
+% Random Matrix
+R = rand(3,3); % Values between 0 and 1
+
 
 % start:jump by some value: end
 x = 1:2:10;
