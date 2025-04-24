@@ -6,8 +6,6 @@ x = linspace(0,10,5);
 
 y = x.^3 - 3*x.^2 + 2*x;
 
-%y = x.^2 + 2*x;
-
 dy_dx = gradient(y,x);
 disp("Derivative values: ");
 disp(dy_dx);
